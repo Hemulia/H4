@@ -2,7 +2,7 @@
 ## Pantry </br>
 ## Appissa pystyy lisäämään Pantryyn eli ruokavarastoon tuotteita ja sekä niiden merkkejä.
 ### Ruokavaraston tuotteiden etusivu. Uuden tuotteen pystyy lisäämään listan alapuolelta
-![pa](./Pantry.jpg)
+![pa](./Pantry11.jpg)
 ### Tällä sivulla voi lisätä uuden tuotteen tai poistua sivulta, jos tahtoo Cancel-napin kautta
 ![dd](./Pantry1.jpg)
 ### Listalla tuotteen nimeä klikkaamalla pääsee editoimaan tuotteen tietoja tai menemään takaisin listaukseen, jos näin käyttäjä tahtoo. Tuotteen voi myös poistaa editointi sivulta
