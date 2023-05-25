@@ -1,0 +1,36 @@
+{% extends "item/base.html" %}
+
+{% block "content" %}
+    <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h1 style="font-family: 'Arial', sans-serif; color: #333; font-size: 32px; margin-bottom: 20px;">Item</h1>
+        <form method="post" style="margin-bottom: 20px;">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Save" style="
+                background-color: #ff5f5f;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                padding: 8px 15px;
+                font-family: 'Arial', sans-serif;
+                font-size: 14px;
+                text-transform: uppercase;
+                cursor: pointer;">
+        </form>
+        <p style="margin-bottom: 10px;"><a href="/" style="
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;">Cancel</a></p>
+        {% if object %}
+            <p><a href="/item/{{ object.pk }}/delete" style="
+                text-decoration: none;
+                color: #ff5f5f;
+                font-weight: bold;
+                font-size: 16px;
+                font-family: 'Arial', sans-serif;">Delete</a></p>
+        {% endif %}
+    </div>
+		
+{% endblock "content" %}
