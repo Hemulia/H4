@@ -4,12 +4,24 @@
 {% block "content" %}
 
   <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-    <h1 style="font-family: 'Arial', sans-serif; color: #333; font-size: 32px; margin-bottom: 20px;">Items in the Pantry</h1>
-    <h3 style="font-family: 'Arial', sans-serif; color: #777; font-size: 18px; font-weight: bold; margin-bottom: 30px;">Here are all the items in my pantry</h3>
+    <h1 style="font-family: 'Arial', sans-serif; color: #333; font-size: 32px; margin-bottom: 20px;">
+      Items in the Pantry
+    </h1>
+    <h3 style="font-family: 'Arial', sans-serif; color: #777; font-size: 18px; font-weight: bold; margin-bottom: 30px;">
+      Here are all the items in my pantry
+    </h3>
 
     {% for object in object_list %}
       <p style="margin-bottom: 10px;">
-        <a style="text-decoration: none; color: #555; font-weight: bold; font-size: 18px;" href="/item/{{ object.pk }}">{{ object }}</a>
+        <a style=
+           "text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            font-size: 18px;"
+           href="/item/{{ object.pk }}">
+          {{ object }}
+          {{ object.brand.name }}
+        </a>
       </p>
     {% endfor %}
 
